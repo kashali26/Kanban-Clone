@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-grids/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-navigations/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-splitbuttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-dropdowns/styles/material.css";
 @import "tailwindcss";
 
 @theme {
@@ -41,21 +47,21 @@
   --background-image-card-5: url("/assets/images/card-img-5.png");
   --background-image-card-6: url("/assets/images/card-img-6.png");
   --background-image-linear100: linear-gradient(
-          105deg,
-          rgba(207, 241, 255, 0.8) 14.17%,
-          rgba(255, 255, 255, 0) 54.71%
+    105deg,
+    rgba(207, 241, 255, 0.8) 14.17%,
+    rgba(255, 255, 255, 0) 54.71%
   );
   --background-image-linear200: linear-gradient(
-          39deg,
-          rgba(3, 3, 3, 0.54) -3.66%,
-          rgba(6, 6, 6, 0) 45.57%
+    39deg,
+    rgba(3, 3, 3, 0.54) -3.66%,
+    rgba(6, 6, 6, 0) 45.57%
   );
   --shadow-100:
-          0px 1px 3px 0px rgba(16, 24, 40, 0.1),
-          0px 1px 2px 0px rgba(16, 24, 40, 0.06);
+    0px 1px 3px 0px rgba(16, 24, 40, 0.1),
+    0px 1px 2px 0px rgba(16, 24, 40, 0.06);
   --shadow-200:
-          0px 12px 16px -4px rgba(16, 24, 40, 0.1),
-          0px 4px 20px -2px rgba(16, 24, 40, 0.2);
+    0px 12px 16px -4px rgba(16, 24, 40, 0.1),
+    0px 4px 20px -2px rgba(16, 24, 40, 0.2);
   --shadow-300: 0px 2px 30px 0px rgba(0, 0, 0, 0.05);
   --shadow-400: 0px 2px 6px 0px rgba(13, 10, 44, 0.08);
   --shadow-500: 0px 12px 16px -4px rgba(16, 24, 40, 0.1);
@@ -271,35 +277,35 @@
     }
   }
   .link-logo {
-    @apply flex items-center gap-1.5 py-10 border-b border-light-100;
+    @apply flex items-center gap-0.5 py-4 border-b border-light-100;
     h1 {
-      @apply text-base md:text-2xl font-bold text-dark-100;
+      @apply text-base md:text-2xl font-bold text-light-100;
     }
   }
   .nav-footer {
-    @apply flex items-center gap-2.5 pb-8;
+    @apply flex items-center gap-2.5 py-8 border-t border-light-100;
     img {
       @apply size-10 rounded-full aspect-square;
     }
     article {
       @apply flex flex-col gap-[2px] max-w-[115px];
       h2 {
-        @apply text-sm md:text-base font-semibold text-dark-200 truncate;
+        @apply text-sm md:text-base font-semibold text-light-200 truncate;
       }
       p {
-        @apply text-gray-100 text-xs md:text-sm font-normal truncate;
+        @apply text-[#bec2cb] text-xs md:text-sm font-normal truncate;
       }
     }
   }
   .mobile-sidebar {
-    @apply lg:hidden flex flex-col gap-5;
+    @apply lg:hidden flex flex-col gap-1 bg-[#6365ef];
     header {
       @apply flex justify-between items-center border-b border-light-100;
       h1 {
         @apply text-base md:text-2xl font-bold text-dark-100;
       }
       a {
-        @apply flex items-center gap-1.5 py-10;
+        @apply flex items-center gap-1.5 py-6;
       }
     }
   }
@@ -340,7 +346,7 @@
     }
   }
   .nav-items {
-    @apply flex flex-col px-6 h-full;
+    @apply flex flex-col px-3.5 h-full;
     .container {
       @apply flex flex-col justify-between h-full;
       nav {
@@ -456,7 +462,7 @@
     @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
   }
   .nav-item {
-    @apply flex items-center text-xs md:text-lg font-normal cursor-pointer gap-2.5 py-[18px] px-3.5 rounded-lg text-dark-200 hover:bg-primary-100 hover:text-white;
+    @apply flex items-center text-xs md:text-lg font-semibold cursor-pointer gap-3.5 py-[13px] px-3 rounded-lg text-white hover:bg-[#6365ef] hover:text-white;
   }
   .combo-box {
     @apply !p-3.5 !border w-full !border-light-400 !rounded-xl !text-base !text-dark-300 !font-normal;
@@ -512,8 +518,8 @@ body {
   border: 1px solid #f0fef9;
   background: #ffffff;
   box-shadow:
-          0px 0px 3px 0px rgba(16, 24, 40, 0.1),
-          0px 0px 2px 0px rgba(16, 24, 40, 0.06);
+    0px 0px 3px 0px rgba(16, 24, 40, 0.1),
+    0px 0px 2px 0px rgba(16, 24, 40, 0.06);
   height: 40px;
 }
 
@@ -522,8 +528,8 @@ body {
   border: 1px solid #eaecf0;
   background: #fff;
   box-shadow:
-          0px 12px 16px -4px rgba(16, 24, 40, 0.1),
-          0px 4px 20px -2px rgba(16, 24, 40, 0.2);
+    0px 12px 16px -4px rgba(16, 24, 40, 0.1),
+    0px 4px 20px -2px rgba(16, 24, 40, 0.2);
 }
 .e-dropdown-popup ul .e-item {
   padding-left: 36px;
